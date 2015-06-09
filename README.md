@@ -1,12 +1,14 @@
 # ddrmenutemplates
 
-This project is a repository for example templates for DotNetNuke's DDRMenu navigation provider. These templates can be used as is, or as a basis for the development of custom templates.
+This project is a repository for example templates for [DNN](http://www.dnnsoftware.com/)'s DDRMenu navigation provider. These templates can be used as is, or as a basis for the development of custom templates.
 
 There are three basic example templates to get you started:
 
 - ULToken - Plain unordered list using token template parser 
 - ULRazor - Plain unordered list using Razor template parser 
 - ULXSLT - Plain unordered list using XSLT template parser
+
+These templates can often be used pretty much as-is with the addition of the relevant CSS classes for a Bootstrap navbar or jQuery plugin. 
 
 Also included are example templates for:
 
@@ -15,7 +17,7 @@ Also included are example templates for:
 - HTML dropdown 
 - Breadcrumb trail 
 - Sitemap 
-- Mega menu (contributed by Armand Datema of [2DNN](2dnn.com))
+- Mega menu (contributed by Armand Datema of [2DNN](http://2dnn.com))
 
 ### Using these examples
 
