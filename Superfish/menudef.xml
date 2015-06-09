@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>Superfish.xslt</template>
+  <scripts>
+    <script jsObject="jQuery" />
+    <script jsObject="jQuery.fn.hoverIntent">hoverIntent.js</script>
+    <script jsObject="jQuery.fn.superfish">superfish.js</script>
+  </scripts>
+  <stylesheets>
+    <stylesheet>superfish.css</stylesheet>
+  </stylesheets>
+  <defaultClientOptions>
+    <clientOption name="onShow" value="function() { if ($.browser.msie) this[0].style.removeAttribute('filter'); }" />
+  </defaultClientOptions>
+</manifest>

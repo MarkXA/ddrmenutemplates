@@ -1,0 +1,9 @@
+UL.breadcrumb LI {
+	display: inline;
+	list-style-type: none;
+}
+UL.breadcrumb {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}

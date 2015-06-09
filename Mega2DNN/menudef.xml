@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <template>Mega2DNN.xslt</template>
+    <scripts>
+        <script jsObject="jQuery" />
+        <script jsObject="jQuery.fn.hoverIntent">hoverIntent.js</script>
+        <script>Mega2DNN.js</script>
+    </scripts>
+    <stylesheets>
+        <stylesheet>Mega2DNN.css</stylesheet>
+    </stylesheets>
+</manifest>

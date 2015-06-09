@@ -1,0 +1,92 @@
+ul.megamenu {	
+	margin: 0; padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+}
+ul.megamenu, ul.megamenu li
+{
+list-style-type:none;
+}
+ul.megamenu li {
+	float: left;
+	margin: 0; padding: 0;
+	position: relative;
+}
+
+ul.megamenu ul
+{
+padding:0;margin:0;
+}
+ul.megamenu li a {
+	float: left; 
+	text-decoration:none;
+}
+ul.megamenu li .sub {
+	position: absolute;	
+	left: 0;
+	float: left;
+	display: none;
+}
+ul.megamenu li .row {clear: both; float: left; width: 100%; margin-bottom: 10px;}
+ul.megamenu li .sub ul{
+	list-style: none;
+	margin: 0; padding: 0;
+	width: 150px;
+	float: left;
+}
+ul.megamenu .sub ul li {
+	width: 100%;
+}
+ul.megamenu .sub ul li h2 {
+	padding: 0;  margin: 0;
+	font-size: 11px;
+	font-weight: normal;
+}
+ul.megamenu .sub ul li h2 a {
+	padding:0;
+	margin:0;
+}
+ul.megamenu .sub ul li a {
+	float: none; 
+	text-indent: 0; /*--Reset text indent--*/
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding:0;
+	margin:0;
+}
+
+/* --Modify for styling --*/
+ul.megamenu {
+	background-color:#A60101;
+}
+ul.megamenu a {
+	color:White;font-weight:bold;
+}
+ul.megamenu a {
+	padding:8px;
+}
+ul.megamenu li a.level0:hover, .megahover, ul.megamenu .current {background-color:#2D4A74; }
+div.sub {
+padding:8px;
+-webkit-border-bottom-right-radius: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+ }
+ dib.sub ul {
+ margin-left:8px;
+ }
+#megamenu li.subheader {}
+#megamenu li.sublink {margin-bottom:6px;}
+#megamenu li.subheader h2{margin-bottom:8px;}
+
+ul.megamenu li .sub {
+	background: #2D4A74;
+}
+ul.megamenu .sub ul li h2 a {
+	color: #e8e000;
+}

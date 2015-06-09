@@ -1,0 +1,27 @@
+@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage
+@{ var root = Model.Source.root; }
+
+@helper RenderNodes(IList<MenuNode> nodes) {
+	if (nodes.Count > 0) {
+		<ul>
+			@foreach (var node in nodes) {
+				var cssClasses = new List<string>();
+				if (node.First) { cssClasses.Add("first"); }
+				if (node.Last) { cssClasses.Add("last"); }
+				if (node.Selected) { cssClasses.Add("selected"); }
+				var classString = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", cssClasses.ToArray()) + "\""));
+				<li@classString>
+					@if (node.Enabled) {
+						<a href="@node.Url">@node.Text</a>
+					} else {
+						@node.Text
+					}
+					@RenderNodes(node.Children)
+				</li>
+			}
+		</ul>
+	}
+}
+@RenderNodes(root.Children)

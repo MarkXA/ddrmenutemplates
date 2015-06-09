@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+	<template>Sitemap.xslt</template>
+	<stylesheets>
+		<stylesheet>[MANIFEST]/sitemap.css</stylesheet>
+	</stylesheets>
+	<defaultTemplateArguments>
+		<templateArgument name="CSSClass" value="sitemap" />
+	</defaultTemplateArguments>
+</manifest>
