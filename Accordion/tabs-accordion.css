@@ -1,0 +1,57 @@
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+.toolsaccordion {
+	background:#333333 url(/img/global/gradient/h600.png) 0 0;
+	width: 300px;
+	border:1px solid #333333;
+}
+
+/* accordion header */
+.toolsaccordion h3 {
+	background:#cccccc url(/img/global/gradient/h30.png);
+	margin:0;
+	padding:5px 15px;
+	font-size:14px;
+	font-weight:normal;
+	border:1px solid #ffffff;
+	border-bottom:1px solid #dddddd;
+	cursor:pointer;		
+}
+
+/* currently active header */
+.toolsaccordion h3.current {
+	cursor:default;
+	background-color:#ffffff;
+}
+
+/* accordion pane */
+.toolsaccordion div.pane {
+	border:1px solid #ffffff;
+	border-width:0 2px;
+	display:none;
+	padding:15px;
+	color:#ffffff;
+	font-size:12px;
+}
+
+/* entry inside pane with no link */
+.toolsaccordion div.pane div {
+	color:#ffffff;
+}
+
+/* a title inside pane */
+.toolsaccordion div.pane h3 {
+	font-weight:normal;
+	margin:0 0 -5px 0;
+	font-size:16px;
+	color:#999999;
+}
+
+.toolsaccordion A:link, .toolsaccordion A:visited, .toolsaccordion A:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.toolsaccordion H3 A:link, .toolsaccordion H3 A:visited, .toolsaccordion H3 A:active {
+	color: #333333;
+}

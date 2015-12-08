@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>jQueryToolsAccordion.xslt</template>
+  <scripts>
+    <script jsObject="jQuery" />
+    <script jsObject="jQuery.tools.tabs">http://wilshireprod.priworks.com/Portals/_default/Skins/Wilshire2015/OrangeSideNav/jQuery.tools.1.2.6.min.js</script>
+  </scripts>
+  <stylesheets>
+    <stylesheet>[MANIFEST]/tabs-accordion.css</stylesheet>
+  </stylesheets>
+  <defaultClientOptions>
+    <clientOption name="tabs" type="string" value="h3" />
+    <clientOption name="effect" type="string" value="slide" />
+    <clientOption name="event" type="string" value="mouseover" />
+  </defaultClientOptions>
+</manifest>
