@@ -39,6 +39,9 @@
                 <xsl:when test="@enabled = 1">
         	<!-- class /opening -->
 					<a href="{@url}">
+						<xsl:if test="@target">
+							<xsl:attribute name="target"><xsl:value-of select="@target" /></xsl:attribute>
+						</xsl:if>
 						<!-- class opening -->
 						<xsl:attribute name="class">
 			                <xsl:if test="@breadcrumb = 1">
@@ -131,6 +134,9 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<a class="" href="{@url}">
+					<xsl:if test="@target">
+						<xsl:attribute name="target"><xsl:value-of select="@target" /></xsl:attribute>
+					</xsl:if>
 					<!-- class opening -->
 					<xsl:attribute name="class">
 		                <xsl:if test="@breadcrumb = 1">

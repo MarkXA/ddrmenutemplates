@@ -5,7 +5,7 @@
 [>NODE-TOP]
 	<li class="toplevel[?FIRST] first[/?][?LAST] last[/?][?SELECTED] selected[/?]">
 		[?ENABLED]
-			<a href="[=URL]">[=TEXT]</a>
+			<a href="[=URL]" [?TARGET]target="[=TARGET]"[/?]>[=TEXT]</a>
 		[?ELSE]
 			[=TEXT]
 		[/?]
@@ -20,7 +20,7 @@
 [>NODE]
 	<li class="submenu[?FIRST] first[/?][?LAST] last[/?][?SELECTED] selected[/?]">
 		[?ENABLED]
-			<a href="[=URL]">[=TEXT]</a>
+			<a href="[=URL]" [?TARGET]target="[=TARGET]"[/?]>[=TEXT]</a>
 		[?ELSE]
 			[=TEXT]
 		[/?]

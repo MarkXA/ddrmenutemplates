@@ -14,7 +14,7 @@
 				var classString = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", cssClasses.ToArray()) + "\""));
 				<li class="@classString">
 					@if (node.Enabled) {
-						<a href="@node.Url">@node.Text</a>
+						<a href="@node.Url" target="@node.Target">@node.Text</a>
 					} else {
 						@node.Text
 					}

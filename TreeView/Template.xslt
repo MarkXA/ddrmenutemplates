@@ -31,6 +31,9 @@
         </xsl:when>
         <xsl:otherwise>
           <a href="{@url}">
+						<xsl:if test="@target">
+							<xsl:attribute name="target"><xsl:value-of select="@target" /></xsl:attribute>
+						</xsl:if>
             <xsl:choose>
               <xsl:when test="@selected=1">
                 <xsl:attribute name="class">selected breadcrumb</xsl:attribute>

@@ -17,6 +17,9 @@
 				<xsl:choose>
 					<xsl:when test="@enabled = 1">
 						<a href="{@url}">
+							<xsl:if test="@target">
+								<xsl:attribute name="target"><xsl:value-of select="@target" /></xsl:attribute>
+							</xsl:if>
 							<xsl:value-of select="@text" />
 						</a>
 					</xsl:when>
@@ -37,6 +40,9 @@
 			<xsl:choose>
 				<xsl:when test="@enabled = 1">
 					<a href="{@url}">
+						<xsl:if test="@target">
+							<xsl:attribute name="target"><xsl:value-of select="@target" /></xsl:attribute>
+						</xsl:if>
 						<xsl:value-of select="@text" />
 					</a>
 				</xsl:when>
